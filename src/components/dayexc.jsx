@@ -122,9 +122,16 @@ const RenderContentForDay = (selectedDate) => {
       setCurrentIndex(currentIndex - 1);
     }
   };
+  
+  const goingBack = () =>{
+    prevSlide();
+  }
 
-  const handleDoneClick = () => {
+  const completed = () => {
     nextSlide();
+  
+
+
   };
 
   return (
@@ -139,10 +146,10 @@ const RenderContentForDay = (selectedDate) => {
               alt={exercises[currentIndex].name}
             />
             <div className="controlBtns">
-              <button className="goingBack"  onClick={handleDoneClick}>
+              <button className="goingBack"  onClick={goingBack}>
                 Back
               </button>
-              <button className="exerciseComplete" onClick={handleDoneClick}>
+              <button className="exerciseComplete" onClick={completed}>
                 Done
               </button>
             </div>
