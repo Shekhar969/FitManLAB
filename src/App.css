@@ -39,17 +39,6 @@ box-sizing: border-box;
   margin-top: 1rem;
 }
 
-.arrows {
-  
-  background: none;
-  border: none;
-  padding: 10px;
-  font-size: 45px;
-  align-items: center;
-  justify-content: center;
-  font-family: "DM Serif Text", serif;
-  
-}
 
 
 .exerciseName{
