@@ -11,6 +11,7 @@ box-sizing: border-box;
   justify-content: center; 
   width: 100%; 
   height: auto;
+  user-select: none;
 }
 .topContainerBar{
   display: flex;
