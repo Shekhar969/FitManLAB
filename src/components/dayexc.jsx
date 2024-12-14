@@ -45,9 +45,10 @@ const mondayExercises = [
     name: "3. Back Extensions",
     imgSrc: "./src/assets/imgs/Back Extensions.webp",
   },
-  { 
-    name: "4. Cable Curl", 
-    imgSrc: "./src/assets/imgs/Cable Curl.webp" },
+  {
+    name: "4. Cable Curl",
+    imgSrc: "./src/assets/imgs/Cable Curl.webp",
+  },
   {
     name: "5. Dumbbell Row",
     imgSrc: "./src/assets/imgs/Dumbbell-Row.webp",
@@ -128,8 +129,6 @@ const RenderContentForDay = (selectedDate) => {
 
   return (
     <div className="sliderControls">
-
-
       <div className="exerciseDescription">
         {exercises.length > 0 && (
           <>
@@ -139,17 +138,17 @@ const RenderContentForDay = (selectedDate) => {
               src={exercises[currentIndex].imgSrc}
               alt={exercises[currentIndex].name}
             />
-            <br />
-            <button className="exerciseComplete" onClick={handleDoneClick}>
-              Back
-            </button>
-            <button className="exerciseComplete" onClick={handleDoneClick}>
-              Done
-            </button>
+            <div className="controlBtns">
+              <button className="goingBack"  onClick={handleDoneClick}>
+                Back
+              </button>
+              <button className="exerciseComplete" onClick={handleDoneClick}>
+                Done
+              </button>
+            </div>
           </>
         )}
       </div>
-      
     </div>
   );
 };

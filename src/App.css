@@ -53,7 +53,23 @@ box-sizing: border-box;
   height: 400px;
 }
 
+.controlBtns{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
 .exerciseComplete{
+  margin-top: 20px;
+  border: 1px solid beige;
+  border-radius: 10px;
+  font-size: 30px;
+  color: rgb(56, 19, 19);
+  font-family: "DM Serif Text", serif;
+}
+
+.goingBack{
   margin-top: 20px;
   border: 1px solid beige;
   border-radius: 10px;
