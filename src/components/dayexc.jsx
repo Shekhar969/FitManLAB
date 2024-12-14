@@ -1,7 +1,3 @@
-import {
-  MdOutlineKeyboardDoubleArrowLeft,
-  MdOutlineKeyboardDoubleArrowRight,
-} from "react-icons/md";
 import React, { useState } from "react";
 import "../App.css";
 
