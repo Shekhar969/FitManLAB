@@ -128,13 +128,7 @@ const RenderContentForDay = (selectedDate) => {
 
   return (
     <div className="sliderControls">
-      <button
-        className="arrows"
-        onClick={prevSlide}
-        disabled={currentIndex === 0}
-      >
-        <MdOutlineKeyboardDoubleArrowLeft />
-      </button>
+
 
       <div className="exerciseDescription">
         {exercises.length > 0 && (
@@ -152,13 +146,7 @@ const RenderContentForDay = (selectedDate) => {
           </>
         )}
       </div>
-      <button
-        className="arrows"
-        onClick={nextSlide}
-        disabled={currentIndex === exercises.length - 1}
-      >
-        <MdOutlineKeyboardDoubleArrowRight />
-      </button>
+      
     </div>
   );
 };
