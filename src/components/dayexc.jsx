@@ -97,6 +97,12 @@ const RenderContentForDay = (selectedDate) => {
         return sundayExercises;
       case "Tue":
         return tuesdayExercises;
+      case "Wed":
+        return tuesdayExercises;
+      case "Thu":
+        return tuesdayExercises;
+      case "Fri":
+        return tuesdayExercises;
       default:
         return [];
     }
