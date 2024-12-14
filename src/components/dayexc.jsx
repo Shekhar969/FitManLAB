@@ -141,6 +141,9 @@ const RenderContentForDay = (selectedDate) => {
             />
             <br />
             <button className="exerciseComplete" onClick={handleDoneClick}>
+              Back
+            </button>
+            <button className="exerciseComplete" onClick={handleDoneClick}>
               Done
             </button>
           </>
