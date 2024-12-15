@@ -38,8 +38,8 @@ box-sizing: border-box;
 .sliderControls {
   display: flex;
   margin-top: 1rem;
+  justify-content: center;
 }
-
 
 
 .exerciseName{

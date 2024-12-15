@@ -82,6 +82,89 @@ const tuesdayExercises = [
   },
 ];
 
+const wednesdayExercises = [
+  {
+    name: "1. Squat",
+    imgSrc: "./src/assets/imgs/squat.webp",
+  },
+  {
+    name: "2. Leg Press",
+    imgSrc: "src/assets/imgs/Back Extensions.webp",
+  },
+  {
+    name: "3. Hack Squat",
+    imgSrc: ".src/assets/imgs/Hack Squat.webp",
+  },
+  {
+    name: "4. Leg Extension",
+    imgSrc: "./src/assets/imgs/Leg Extension.webp",
+  },
+  {
+    name: "5. Leg Extension",
+    imgSrc: "./src/assets/imgs/Leg Extension.webp",
+  },
+  {
+    name: "6. Mountain Climbers",
+    imgSrc: "./src/assets/imgs/Mountain Climbers.gif",
+  },
+];
+
+const thursdayExercises = [
+  {
+    name: "1. Squat",
+    imgSrc: "./src/assets/imgs/squat.webp",
+  },
+  {
+    name: "2. Leg Press",
+    imgSrc: "src/assets/imgs/Back Extensions.webp",
+  },
+  {
+    name: "3. Hack Squat",
+    imgSrc: ".src/assets/imgs/Hack Squat.webp",
+  },
+  {
+    name: "4. Leg Extension",
+    imgSrc: "./src/assets/imgs/Leg Extension.webp",
+  },
+  {
+    name: "5. Leg Extension",
+    imgSrc: "./src/assets/imgs/Leg Extension.webp",
+  },
+  {
+    name: "6. Mountain Climbers",
+    imgSrc: "./src/assets/imgs/Mountain Climbers.gif",
+  },
+];
+
+const fridayExercises = [
+  {
+    name: "1. Squat",
+    imgSrc: "./src/assets/imgs/squat.webp",
+  },
+  {
+    name: "2. Leg Press",
+    imgSrc: "src/assets/imgs/Back Extensions.webp",
+  },
+  {
+    name: "3. Hack Squat",
+    imgSrc: ".src/assets/imgs/Hack Squat.webp",
+  },
+  {
+    name: "4. Leg Extension",
+    imgSrc: "./src/assets/imgs/Leg Extension.webp",
+  },
+  {
+    name: "5. Leg Extension",
+    imgSrc: "./src/assets/imgs/Leg Extension.webp",
+  },
+  {
+    name: "6. Mountain Climbers",
+    imgSrc: "./src/assets/imgs/Mountain Climbers.gif",
+  },
+];
+
+
+
 const RenderContentForDay = (selectedDate) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -95,11 +178,11 @@ const RenderContentForDay = (selectedDate) => {
       case "Tue":
         return tuesdayExercises;
       case "Wed":
-        return tuesdayExercises;
+        return wednesdayExercises;
       case "Thu":
-        return tuesdayExercises;
+        return thursdayExercises;
       case "Fri":
-        return tuesdayExercises;
+        return fridayExercises;
       default:
         return [];
     }
