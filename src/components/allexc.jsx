@@ -21,7 +21,6 @@ function Allexc() {
         <div onClick={() => handleDayClick("Wed")}>Wed</div>
         <div onClick={() => handleDayClick("Thu")}>Thu</div>
         <div onClick={() => handleDayClick("Fri")}>Fri</div>
-        <div onClick={() => handleDayClick("Sat")}>Sat</div>
       </div>
       <div>{RenderContentForDay(selectedDate)}</div>
     </div>

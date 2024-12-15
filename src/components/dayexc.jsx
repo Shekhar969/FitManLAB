@@ -84,81 +84,93 @@ const tuesdayExercises = [
 
 const wednesdayExercises = [
   {
-    name: "1. Squat",
+    name: "1. Shoulder Press",
     imgSrc: "./src/assets/imgs/squat.webp",
   },
   {
-    name: "2. Leg Press",
+    name: "2. Lateral Raises",
     imgSrc: "src/assets/imgs/Back Extensions.webp",
   },
   {
-    name: "3. Hack Squat",
+    name: "3. Reverse Fly",
     imgSrc: ".src/assets/imgs/Hack Squat.webp",
   },
   {
-    name: "4. Leg Extension",
+    name: "4. Cable Face Pull",
     imgSrc: "./src/assets/imgs/Leg Extension.webp",
   },
   {
-    name: "5. Leg Extension",
+    name: "5. Dumbbell Shrug",
     imgSrc: "./src/assets/imgs/Leg Extension.webp",
   },
   {
-    name: "6. Mountain Climbers",
+    name: "6. Planks (3 sets of 40 sec)",
     imgSrc: "./src/assets/imgs/Mountain Climbers.gif",
   },
+  {
+    name: "Mountain Climbers",
+    imgSrc: "",
+  },
+  {
+    name:"Russain Twists (3 sets of 10)",
+    imgSrc: "",
+  }
 ];
 
 const thursdayExercises = [
   {
-    name: "1. Squat",
+    name: "1. Dumbbell Cheast Press",
     imgSrc: "./src/assets/imgs/squat.webp",
   },
   {
-    name: "2. Leg Press",
+    name: "2. Dumbbell Incline Press",
     imgSrc: "src/assets/imgs/Back Extensions.webp",
   },
   {
-    name: "3. Hack Squat",
+    name: "3. Decline Barbell Press",
     imgSrc: ".src/assets/imgs/Hack Squat.webp",
   },
   {
-    name: "4. Leg Extension",
+    name: "4. Chest Fly",
     imgSrc: "./src/assets/imgs/Leg Extension.webp",
   },
   {
-    name: "5. Leg Extension",
+    name: "5. Overhead Tricep Extesnsion",
     imgSrc: "./src/assets/imgs/Leg Extension.webp",
   },
   {
-    name: "6. Mountain Climbers",
+    name: "6. Rope Tricep Extension",
     imgSrc: "./src/assets/imgs/Mountain Climbers.gif",
   },
+  {
+    name:"Tricep Dips",
+    imgSrc:"",
+  }
 ];
 
 const fridayExercises = [
   {
-    name: "1. Squat",
+    name: "1. Bench Dips",
     imgSrc: "./src/assets/imgs/squat.webp",
   },
   {
-    name: "2. Leg Press",
+    name: "2. Barbell Curis",
     imgSrc: "src/assets/imgs/Back Extensions.webp",
   },
   {
-    name: "3. Hack Squat",
+    name: "3. Hammer curls",
     imgSrc: ".src/assets/imgs/Hack Squat.webp",
   },
   {
-    name: "4. Leg Extension",
+    name: "4. Tricep Extensions",
     imgSrc: "./src/assets/imgs/Leg Extension.webp",
   },
   {
-    name: "5. Leg Extension",
+    name: "5. Cable Crossovers",
     imgSrc: "./src/assets/imgs/Leg Extension.webp",
   },
   {
-    name: "6. Mountain Climbers",
+    name: "6. Bench Dips",
     imgSrc: "./src/assets/imgs/Mountain Climbers.gif",
   },
 ];
@@ -183,8 +195,6 @@ const RenderContentForDay = (selectedDate) => {
         return thursdayExercises;
       case "Fri":
         return fridayExercises;
-      default:
-        return [];
     }
   };
 
