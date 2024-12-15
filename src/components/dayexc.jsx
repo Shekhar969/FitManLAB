@@ -229,6 +229,7 @@ const RenderContentForDay = (selectedDate) => {
         {exercises.length > 0 && (
           <>
             <div className="exerciseName">{exercises[currentIndex].name}</div>
+            <div className="exerciseType">{exercises[currentIndex].type}</div>
             <img
               className="exerciseVdo"
               src={exercises[currentIndex].imgSrc}
