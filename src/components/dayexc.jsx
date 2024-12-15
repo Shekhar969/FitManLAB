@@ -62,11 +62,11 @@ const tuesdayExercises = [
   },
   {
     name: "2. Leg Press",
-    imgSrc: "./src/assets/imgs/Leg Press.webp",
+    imgSrc: "src/assets/imgs/Back Extensions.webp",
   },
   {
     name: "3. Hack Squat",
-    imgSrc: "./src/assets/imgs/Hack Squat.webp",
+    imgSrc: ".src/assets/imgs/Hack Squat.webp",
   },
   {
     name: "4. Leg Extension",
