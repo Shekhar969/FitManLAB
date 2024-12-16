@@ -3,26 +3,32 @@ import "../App.css";
 
 const sundayExercises = [
   {
+    type: "Arms",
     name: "1. Flat Chest Presses",
     imgSrc: "./src/assets/imgs/Flat Chest Presses.gif",
   },
   {
+    type: "Arms",
     name: "2. Incline Chest Presses",
     imgSrc: "./src/assets/imgs/Incline Chest Presses.gif",
   },
   {
+    type: "Arms",
     name: "3. Hammer curls",
     imgSrc: "./src/assets/imgs/Hammer curls.gif",
   },
   {
+    type: "Arms",
     name: "4. Overhead Triceps Extensions",
     imgSrc: "./src/assets/imgs/Overhead Triceps Extensions.gif",
   },
   {
+    type: "Arms",
     name: "5. Shrugs",
     imgSrc: "./src/assets/imgs/Shrugs.gif",
   },
   {
+    type: "Arms",
     name: "6. Lateral Raises",
     imgSrc: "./src/assets/imgs/Lateral Raises.gif",
   },
@@ -186,7 +192,6 @@ const RenderContentForDay = (selectedDate) => {
         return sundayExercises;
       case "Mon":
         return mondayExercises;
-        return sundayExercises;
       case "Tue":
         return tuesdayExercises;
       case "Wed":
@@ -228,8 +233,8 @@ const RenderContentForDay = (selectedDate) => {
       <div className="exerciseDescription">
         {exercises.length > 0 && (
           <>
-            <div className="exerciseName">{exercises[currentIndex].name}</div>
             <div className="exerciseType">{exercises[currentIndex].type}</div>
+            <div className="exerciseName">{exercises[currentIndex].name}</div>
             <img
               className="exerciseVdo"
               src={exercises[currentIndex].imgSrc}
