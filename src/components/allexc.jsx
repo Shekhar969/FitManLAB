@@ -1,27 +1,33 @@
-import React, { useState ,useEffect } from "react";
-import RenderContentForDay from "./dayexc";
+import React, { useState } from "react";
+import RenderContentForDay from "./dayexc";   
 import "../App.css";
 
 function Allexc() {
-  const [selectedDate, setSelectedDate] = useState("Sun");
+  const [selectedDate, setSelectedDate] = useState(null);  
+  const [isBarHidden, setIsBarHidden] = useState(false);
 
-  const handleDayClick = (day) => {
-    setSelectedDate(day);
+  const handleDayClick = (event) => {
+    const clickedDay = event.target.dataset.day; 
+    if (clickedDay) {
+      setSelectedDate(clickedDay);
+      setIsBarHidden(true);
+    }
   };
-
-
 
   return (
     <div className="mainContainer">
-  
-      <div className="topContainerBar">
-        <div onClick={() => handleDayClick("Sun")}>Sun</div>
-        <div onClick={() => handleDayClick("Mon")}>Mon</div>
-        <div onClick={() => handleDayClick("Tue")}>Tue</div>
-        <div onClick={() => handleDayClick("Wed")}>Wed</div>
-        <div onClick={() => handleDayClick("Thu")}>Thu</div>
-        <div onClick={() => handleDayClick("Fri")}>Fri</div>
-      </div>
+      {!isBarHidden && (
+        <div className="topContainerBar" onClick={handleDayClick}>
+          <div data-day="Sun">Sun</div>
+          <div data-day="Mon">Mon</div>
+          <div data-day="Tue">Tue</div>
+          <div data-day="Wed">Wed</div>
+          <div data-day="Thu">Thu</div>
+          <div data-day="Fri">Fri</div>
+          <div data-day="Sat">Sat</div>
+        </div>
+      )}
+
       <div>{RenderContentForDay(selectedDate)}</div>
     </div>
   );
